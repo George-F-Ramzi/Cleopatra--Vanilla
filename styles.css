@@ -32,3 +32,44 @@ a {
   color: var(--text);
   text-decoration: none;
 }
+
+/* Nav Bar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26px;
+}
+
+#logo {
+  font-size: 20px;
+  font-style: normal;
+  color: var(--text);
+  font-weight: 700;
+  margin-left: -1px;
+}
+
+.nav__list {
+  font-size: 20px;
+  font-style: normal;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.nav__link:first-child {
+  margin-right: 22px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nav__link:last-child {
+  margin-right: -1px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#nav__line {
+  margin-top: 26px;
+  border: 2px solid var(--text);
+}
