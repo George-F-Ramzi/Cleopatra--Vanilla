@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Variables */
+
+:root {
+  --background: #edeae2;
+  --text: #212423;
+  --para: #464e4c;
+  --disabled: #788783;
+}
+
+/* Roles */
+
+html {
+  background-color: var(--background) !important;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  max-width: 1184px;
+  padding: 0px 32px 60px 32px;
+  margin-inline: auto;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
