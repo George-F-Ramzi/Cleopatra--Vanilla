@@ -112,7 +112,8 @@ nav {
   min-width: 409px;
   border-radius: 2px;
   height: 500px;
-  object-fit: fill;
+  object-fit: cover;
+  background-color: rgb(212, 212, 212);
 }
 
 #container {
