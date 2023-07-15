@@ -110,8 +110,11 @@ nav {
   height: 632px;
 }
 
-#details {
-  width: 100%;
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 #authors {
@@ -125,6 +128,7 @@ nav {
   font-size: 40px;
   font-weight: 700;
   margin-top: 7px;
+  min-width: 100%;
 }
 
 #description {
@@ -157,26 +161,12 @@ nav {
   font-weight: 700;
 }
 
-#container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 #price {
   color: var(--text);
   font-size: 64px;
   font-weight: 700;
   display: flex;
   align-items: flex-start;
-}
-
-#price > span {
-  color: var(--para);
-  font-size: 20px;
-  font-weight: 700;
-  margin-left: 7px;
-  margin-top: 4px;
 }
 
 #buy__button {

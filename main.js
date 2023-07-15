@@ -263,10 +263,9 @@ let description = document.getElementById("description");
 let pages = document.getElementById("number");
 let price = document.getElementById("price");
 let buyLink = document.getElementById("buy__button");
-let country = document.getElementById("country");
 
 function Display() {
-  if (!data) return;
+  if (!data) return Fetching();
 
   if (data.volumeInfo.authors)
     authors.innerHTML = `Authors: ${data.volumeInfo.authors}`;
@@ -285,12 +284,10 @@ function Display() {
   }
 
   if (data.saleInfo.listPrice.amount)
-    price.innerHTML = `${data.saleInfo.listPrice.amount}$ <span id="country">EGP</span>`;
+    price.innerHTML = `${data.saleInfo.listPrice.amount}$`;
   else {
     price.innerHTML = "No Price";
   }
-
-  country.innerHTML = data.saleInfo.country;
 
   buyLink.setAttribute("href", data.volumeInfo.infoLink);
 }
