@@ -109,7 +109,7 @@ nav {
 
 #preview {
   margin-right: 80px;
-  width: 409px;
+  min-width: 409px;
   border-radius: 2px;
   height: 500px;
   object-fit: fill;
